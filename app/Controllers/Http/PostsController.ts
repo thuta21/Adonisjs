@@ -3,7 +3,7 @@ import { schema } from '@ioc:Adonis/Core/Validator'
 import Post from 'App/Models/Post'
 
 export default class PostsController {
-  public async index(ctx: HttpContextContract) {
+  public async index( ctx : HttpContextContract) {
     return Post.all()
   }
 
